@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Me</title>
+</head>
+<body>
+  <header>
+    <h1>Contact Form</h1>
+    <nav>
+      <a href="portfolio.html">Home</a> |
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <main>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" required><br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="5" cols="30" required></textarea><br><br>
+
+      <p>Preferred Contact Method:</p>
+      <input type="checkbox" name="method" value="email"> Email
+      <input type="checkbox" name="method" value="phone"> Phone
+      <input type="checkbox" name="method" value="text"> Text<br><br>
+
+      <p>Inquiry Type:</p>
+      <input type="radio" name="inquiry" value="general" required> General
+      <input type="radio" name="inquiry" value="business"> Business
+      <input type="radio" name="inquiry" value="support"> Support<br><br>
+
+      <label for="contactDate">Preferred Contact Date:</label>
+      <input type="date" id="contactDate" name="contactDate"><br><br>
+
+      <label for="urgency">Urgency (1 to 10):</label>
+      <input type="range" id="urgency" name="urgency" min="1" max="10"><br><br>
+
+      <label for="country">Your Country:</label>
+      <select id="country" name="country">
+        <option value="">--Select--</option>
+        <option value="India">India</option>
+        <option value="US">USA</option>
+        <option value="UK">UK</option>
+      </select><br><br>
+
+      <input type="submit" value="Submit">
+    </form>
+  </main>
+
+  <footer>
+    <p>© 2025 Contact Me</p>
+  </footer>
+</body>
+</html>
